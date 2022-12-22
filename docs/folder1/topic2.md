@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Topic 2
-parent: UI Components
+parent: folder1
 nav_order: 2
 ---
 

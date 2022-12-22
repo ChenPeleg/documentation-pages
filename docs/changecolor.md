@@ -1,3 +1,10 @@
+---
+layout: default
+title: Change color
+nav_order: 3
+---
+
+
 # Color scheme
 
 ## Color scheme
