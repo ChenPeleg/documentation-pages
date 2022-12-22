@@ -1,7 +1,7 @@
 ---
 layout: default
 title: First
-nav_order: 2
+nav_order: 4
 ---
 
 # first thing is first
