@@ -6,3 +6,11 @@ div.flex-middle {
     justify-content: center;
     align-items: center;
 }
+@media (min-width: 31.25rem) {
+    div.flex-middle {
+        width: 100%;
+        button {
+            width: 80%;
+        }
+    }
+}

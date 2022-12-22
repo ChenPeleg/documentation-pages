@@ -2,12 +2,13 @@
     <button class="btn js-toggle-dark-mode">Dark colors</button>
 </div>
 <script>
+    const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
     if (localStorage.getItem('theme') === 'dark') {
         jtd.setTheme('dark');
     }
     setTimeout(() => {
 
-        const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
 
         jtd.addEvent(toggleDarkMode, 'click', function () {
 
@@ -22,5 +23,5 @@
             }
         });
 
-    }, 400)
+    }, 500)
 </script>
