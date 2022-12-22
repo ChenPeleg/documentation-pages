@@ -2,6 +2,7 @@ title: The pages tittle
 description: learning about Jekyll docs
 theme: just-the-docs
 
+logo: "/assets/images/logo.png"
 
 url: https://ChenPeleg.github.io/documentation-pages
 
