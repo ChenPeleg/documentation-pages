@@ -1,9 +1,9 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: The pages tittle
+description: learning about Jekyll docs
 theme: just-the-docs
 
 
 url: https://ChenPeleg.github.io/documentation-pages
 
 aux_links:
-  Template Repository: https://github.com/ChenPeleg/documentation-pages
+  View on GitHub: https://github.com/ChenPeleg/documentation-pages
