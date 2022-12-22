@@ -1,27 +1,28 @@
 <div class="flex-middle">
     <button class="btn js-toggle-dark-mode">Light colors</button>
     <script>
+        const darkSchema = 'darker'
         let toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-        if (localStorage.getItem('theme') === 'dark') {
-            jtd.setTheme('dark');
+        if (localStorage.getItem('theme') === 'darker') {
+            jtd.setTheme('darker');
             toggleDarkMode.textContent = 'Dark colors';
         }
         const tryToAddEventListener = () => {
             toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
             console.log(toggleDarkMode);
             if (!toggleDarkMode) {
-                setTimeout(tryToAddEventListener, 500);
+                setTimeout(tryToAddEventListener, 200);
                 return;
             }
             jtd.addEvent(toggleDarkMode, 'click', function () {
 
-                if (jtd.getTheme() === 'dark') {
+                if (jtd.getTheme() === 'darker') {
                     jtd.setTheme('light');
                     localStorage.setItem('theme', 'light');
                     toggleDarkMode.textContent = 'Dark colors';
                 } else {
-                    jtd.setTheme('dark');
-                    localStorage.setItem('theme', 'dark');
+                    jtd.setTheme('darker');
+                    localStorage.setItem('theme', 'darker');
                     toggleDarkMode.textContent = 'Light colors';
                 }
             });
