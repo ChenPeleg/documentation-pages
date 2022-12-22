@@ -5,18 +5,22 @@
     if (localStorage.getItem('theme') === 'dark') {
         jtd.setTheme('dark');
     }
-    const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+    setTimeout(() => {
 
-    jtd.addEvent(toggleDarkMode, 'click', function () {
+        const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
-        if (jtd.getTheme() === 'dark') {
-            jtd.setTheme('light');
-            localStorage.setItem('theme', 'light')
-            toggleDarkMode.textContent = 'Dark colors';
-        } else {
-            jtd.setTheme('dark');
-            localStorage.setItem('theme', 'dark')
-            toggleDarkMode.textContent = 'Light colors';
-        }
-    });
+        jtd.addEvent(toggleDarkMode, 'click', function () {
+
+            if (jtd.getTheme() === 'dark') {
+                jtd.setTheme('light');
+                localStorage.setItem('theme', 'light')
+                toggleDarkMode.textContent = 'Dark colors';
+            } else {
+                jtd.setTheme('dark');
+                localStorage.setItem('theme', 'dark')
+                toggleDarkMode.textContent = 'Light colors';
+            }
+        });
+
+    }, 400)
 </script>
