@@ -6,22 +6,19 @@
     if (localStorage.getItem('theme') === 'dark') {
         jtd.setTheme('dark');
     }
-    setTimeout(() => {
+
+    jtd.addEvent(toggleDarkMode, 'click', function () {
+
+        if (jtd.getTheme() === 'dark') {
+            jtd.setTheme('light');
+            localStorage.setItem('theme', 'light')
+            toggleDarkMode.textContent = 'Dark colors';
+        } else {
+            jtd.setTheme('dark');
+            localStorage.setItem('theme', 'dark')
+            toggleDarkMode.textContent = 'Light colors';
+        }
+    });
 
 
-
-        jtd.addEvent(toggleDarkMode, 'click', function () {
-
-            if (jtd.getTheme() === 'dark') {
-                jtd.setTheme('light');
-                localStorage.setItem('theme', 'light')
-                toggleDarkMode.textContent = 'Dark colors';
-            } else {
-                jtd.setTheme('dark');
-                localStorage.setItem('theme', 'dark')
-                toggleDarkMode.textContent = 'Light colors';
-            }
-        });
-
-    }, 500)
 </script>
