@@ -1,8 +1,7 @@
 ---
 layout: default
-parent: folder1
-title: Topic 1
-nav_order: 1
+title: Topic 1 
+parent: Folder
 ---
 
 # hello I'd like to tell you what to do here

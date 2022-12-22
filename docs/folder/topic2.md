@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Topic 2
-parent: folder1
-nav_order: 2
+parent: Folder
 ---
 
 # Topic 2
