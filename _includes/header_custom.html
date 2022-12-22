@@ -4,6 +4,7 @@
         let toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
         if (localStorage.getItem('theme') === 'dark') {
             jtd.setTheme('dark');
+            toggleDarkMode.textContent = 'Dark colors';
         }
         const tryToAddEventListener = () => {
             toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -26,6 +27,7 @@
             });
 
         }
+        tryToAddEventListener()
 
 
 
