@@ -7,20 +7,20 @@
         }
         const tryToAddEventListener = () => {
             toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-            console.log(toggleDarkMode)
+            console.log(toggleDarkMode);
             if (!toggleDarkMode) {
-                setTimeout(tryToAddEventListener, 500)
+                setTimeout(tryToAddEventListener, 500);
                 return;
             }
             jtd.addEvent(toggleDarkMode, 'click', function () {
 
                 if (jtd.getTheme() === 'dark') {
                     jtd.setTheme('light');
-                    localStorage.setItem('theme', 'light')
+                    localStorage.setItem('theme', 'light');
                     toggleDarkMode.textContent = 'Dark colors';
                 } else {
                     jtd.setTheme('dark');
-                    localStorage.setItem('theme', 'dark')
+                    localStorage.setItem('theme', 'dark');
                     toggleDarkMode.textContent = 'Light colors';
                 }
             });
